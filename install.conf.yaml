@@ -1,9 +1,17 @@
-- clean: ['~']
+- defaults:
+    link: 
+      create: true
+      relink: true
+      force: true
+
+- clean: ['~', '~/.config']
 
 - link:
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
-
-
+    ~/.config/kitty/kitty.conf: kitty.conf
+    ~/.config/kitty/dracula.conf: dracula.conf
+    ~/.config/nvim/init.vim: init.vim
+    ~/.config/nvim/coc-settings.json: coc-settings.json
