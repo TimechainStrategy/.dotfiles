@@ -95,11 +95,6 @@
 # Aliases & Functions {{{
 # ==============================================================================
 
-    # Laravel
-    alias a="artisan"
-    alias tinker="artisan tinker"
-    alias serve="artisan serve"
-    alias mfs="artisan migrate:fresh --seed"
     homestead() {
         ( cd ~/Homestead && vagrant $* )
     }
@@ -136,13 +131,3 @@
     fi
 
 # }}}
-
-# Interactive shell startup scripts {{{
-# ==============================================================================
-
-
-# }}}
-
-# vim: set nospell foldmethod=marker foldlevel=0:
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
