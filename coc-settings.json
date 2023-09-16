@@ -1,8 +1,16 @@
 {
-"coc.preferences.formatOnSaveFiletypes": [
-"javascript",
-"typescript",
-"typescriptreact",
-"json",
-"javascriptreact",
-"typescript.tsx"]}
+    "pyright.enable": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.pythonPath": "/Users/markkinney/Library/Python/3.10/bin",
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "coc.preferences.formatOnSaveFiletypes": [
+        "react",
+        "javascript",
+        "typescript",
+        "typescriptreact",
+        "json",
+        "javascriptreact",
+        "typescript.tsx"
+    ]
+}
