@@ -220,4 +220,9 @@ set clipboard+=unnamedplus
 
 "let g:python3_host_prog = '/Users/markkinney/Library/Python/3.10/bin/pip'
 "let g:loaded_python3_provider = ''
- let g:python3_host_prog = '/opt/homebrew/bin/python3'
+ "let g:python3_host_prog = '/opt/homebrew/bin/python3/bin'
+"let g:python3_host_prog = '/Users/markkinney/.pyenv/versions/3.11.10/envs/neovim/bin/python3.11'
+"
+" Map F1 to be the same as escape key
+map <F1> <Esc>
+imap <F1> <Esc>
