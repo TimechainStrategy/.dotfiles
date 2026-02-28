@@ -93,3 +93,11 @@ if [ -f '/Users/markkinney/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mark
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/markkinney/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/markkinney/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Make sure homebrew is in the path
+export PATH="/opt/homebrew/bin:$PATH"
+
+# Start tmux on startup
+if [ -z "$TMUX" ] && [ "$TERM" = "xterm-kitty" ]; then
+    tmux attach || exec tmux new-session && exit
+fi
